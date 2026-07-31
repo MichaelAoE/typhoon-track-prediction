@@ -1,0 +1,1031 @@
+水利水电技术(中英文) 第54卷 2023年第7期
+李颖 金茹 许娈 等 基于路径与环境场最优赋权的致灾相似台风检索方法研究 水利水电技术 中英文
+, , , . [J]. ( ), 2023, 54
+(7): 14-26.
+LI Ying, JIN Ru, XU Luan, et al. Study on the optimal weighting impact of typhoon track and environmental field in similar typhoon
+retrieval model for similar disasters[J].Water Resources and Hydropower Engineering, 2023, 54(7): 14-26.
+基于路径与环境场最优赋权的致灾相似
+台风检索方法研究
+李 颖 , , 金 茹 , , 许 娈 , , 林 青 , , 姜瑜君
+1 2 1 2 1 2 3 4 5
+( 浙江省气象科学研究所, 浙江 杭州 ; 中国气象科学研究院浙江分院, 浙江 杭州 ;
+1. 310008 2. 310017
+福建省气象台, 福建 福州 ; 福建省灾害天气重点实验室, 福建 福州 ;
+3. 350000 4. 350000
+中国气象科学研究院, 北京 )
+5. 100081
+摘 要: 【目的】 通过检索相似台风来获取历史灾情是灾害综合研判和损失评估中的重要手段, 而台
+风致灾不仅与路径有关, 亦与致灾强度、 持续时间等环境场决定的要素密切相关。 为了发展一套面向
+灾害应对的致灾相似台风解决方案, 【方法】首先, 以 — 月为台风季节、 以 — 年、
+6 11 2014 2015
+— 年台风为目标和历史样本、 以 高度场为环境场指标, 选取相似离度表征路径相似
+1981 2015 500 hPa
+度、 最优相似系数表征环境场相似度并将两者进行标准化及加权设计, 建立了一套致灾相似台风检索
+模型; 其次, 基于上述模型, 通过赋权试验, 考察了台风海陆位置差异、 强度差异对环境场权重赋值
+的影响; 最后, 基于 — 年数据, 选取典型案例蔷琵( )、 桑美( )、 利奇马( )进
+1949 2021 1525 0608 1909
+行方法释用。 【结果】 结果显示: ( )对西北太平洋台风而言, 当环境场权重区间在[ , ]时距
+1 0.3 0.8
+离偏差相对较小, 权重区间在[ , ]时方向偏差相对较小, 两者的最优权重均在 前后取得;
+0.2 0.7 0.5
+( )对影响我国的台风而言, 当环境场赋值区间在[ , ]时, 距离偏差和方向偏差相对较小, 最
+2 0.5 0.9
+优权重赋值在 前后; ( )对影响我国的不同强度台风而言, 当环境场取最优权重时, 台风、 强台
+0.6 3
+风改善敏感度最高。 【结论】 结果表明: 引入环境场对判定致灾相似台风有重要作用, 环境场最优权
+重的选取与台风所处位置、 台风强度有关; 引入环境场的致灾相似台风检索模型对转折路径有一定的
+预判作用, 对台风灾情的分布、 量级等预判工作具有指导意义。
+关键词: 相似台风; 环境场; 最优权重; 致灾危险性; 灾害评估; 降水; 影响因素;
+气候变化
+DOI: 开放科学(资源服务)标志码(OSID):
+10.13928/j.cnki.wrahe.2023.07.002
+中图分类号: 文献标志码: 文章编号:
+P444; P954 A 1000-0860(2023)07-0014-13
+收稿日期: 修回日期: 录用日期: 网络出版日期:
+2023-02-14; 2023-03-03; 2023-03-06; 2023-03-16
+基金项目: 国家自然科学基金项目 浙江省基础公益研究计划项目 福建省灾害天气重点实验
+(42205006); (LGF21D010001, LY21D050001) ;
+室开放课题 浙江省气象局科技计划项目
+(2020KFKT05); (2021YB10, 2021QN09)
+作者简介: 李 颖 女 副高级工程师 博士 主要从事气象灾害损失与风险评估
+(1986—), , , , 。 E-mail:liyingsdzb@163.com
+通信作者: 金 茹 女 工程师 硕士 主要从事台风灾害学 台风结构与强度变化研究
+(1992—), , , , 、 。 E-mail:jinru_ zjqks@163.com
+姜瑜君 男 正高级工程师 博士 主要从事应用气象与专业服务
+(1979—), , , , 。 E-mail:6368292@qq. com
+ⒸEditorialDepartmentofWaterResourcesandHydropowerEngineering. ThisisanopenaccessarticleundertheCCBY-NC-NDlicense.
+14 Water Resources and Hydropower Engineering Vol.54 No.7
+
+李 颖, 等 基于路径与环境场最优赋权的致灾相似台风检索方法研究
+//
+Study on the optimal weighting impact of typhoon track and environmental
+field in similar typhoon retrieval model for similar disasters
+1,2 1,2 1,2 3,4 5
+LI Ying , JIN Ru , XU Luan , LIN Qing , JIANG Yujun
+(1.Zhejiang Institute of Meteorological Sciences, Hangzhou 310008, Zhejiang, China;2.Zhejiang Branch, Chinese
+Academy of Meteorological Sciences, Hangzhou 311300, Zhejiang, China; 3.Fujian Provincial Meteorological
+Observatory, Fuzhou 350000, Fujian, China;4.Fujian Key Laboratory of Severe Weather, Fuzhou 350000,
+Fujian, China;5.Chinese Academy of Meteorological Sciences, Beijing 100081, China)
+Abstract
+: [Objective] Similartyphoonretrievalmethodcanprovideimportantsupportfordisasterrisklossassessmentandemer-
+gency decision. The typhoon-induced disaster is closely related not only to the track, but also to the factors determined by the
+environmental field such as the intensity and the duration of the typhoon. In order to develop a set of similar typhoon model for
+similar disasters, [Methods]firstly, the typhoon season is defined as June to November, the typhoons from 2014 to 2015 and
+1981 to2015 are selected as the target samples and the retrieval samples respectively. The 500-hPa geopotential height field is
+selectedtorepresenttheenvironmentalfield. Thesimilaritydeviationandtheoptimalsimilaritycoefficientisselectedtorepresent
+the track and environmental field similarity,respectively. The two indexes are standardized and weighted to establish the similar
+typhoon retrieval model. Secondly, basedontheretrievalmodel,theinfluenceofregionalandintensitydifferencesontheweight
+of environmental field is investigated through the weighting test. Finally, typical case analysis and disaster pre-judgment and
+interpretation are carried out for typhoon Champi (1525), Saomai (0608) and Lekima (1909) based on the data from 1949 to
+2021. [Results] The results show that: (1) For typhoons in the Northwest Pacific, the distance deviation is relatively small
+when the weight range of the environmental field is [0.3,0.8], and the direction deviation is relatively small when the weight
+range is [0.2,0.7]. The optimal weights of both are around0.5. (2) For typhoons affecting China,when the weight range of
+the environmental field is[0.5,0.9],thedistancedeviationanddirectiondeviationarerelativelysmall,andtheoptimalweight
+is around0.6. (3) For typhoons of different intensities that affecting China, when the environmental field takes the optimal
+weight, the improvementofTYs(Typhoons),STYs(SevereTyphoons) isthehighest. [Conclusion] Theintroductionoftheen-
+vironmental field playsanimportantroleindeterminingthesimilartyphoon-induceddisasters. Theselectionoftheoptimalweight
+of the environmentalfieldisrelatedtothelocationandintensityofthetyphoon. Thissimilartyphoonretrievalmodelhasacertain
+role in the prediction of the turning track, and has a guiding significance for the prediction of the distribution and magnitude of
+typhoon-induced disasters.
+Keywords
+: similar typhoon; environmental field; optimal weight; hazard; disaster assessment; precipitation; influencing
+factors; climate change
+相似台风检索是台风灾害应对的重要手段 台风
+0 引 言 。
+灾害的应对包括实况监测 模型模拟 现场勘查 历
+、 、 、
+台风灾害是发生频繁且可造成巨大损失的自然灾 史案例比对等部分[6-7]
+。
+其中
+,
+在不同灾害应对阶
+害之一 世界气象组织通过对 年来灾害 段 历史案例比对都具有重要意义 而相似台风检索
+。 1970—2019 , ,
+损失数据调查发现[1]
+,
+干旱
+、
+洪水
+、
+风暴是导致人 是历史案例比对的前提[8]
+。
+灾前和灾中阶段
+,
+相似
+员伤亡严重的三大灾害 据估计 到 年全球受 台风检索研究对于台风路径 强度 降水落区的预报
+。 , 2050 、 、
+台风灾害威胁的城市人口将翻一番
+,
+到
+2100
+年因气 预测[9-12]
+,
+以及台风灾害的预警
+、
+风险预估具有重要
+候变化而造成的台风加剧所带来的经济损失将达 意义[6,8,13-14] 灾后阶段 相似台风研究亦可为诊断
+。 ,
+亿美元[2] 对我国而言 据 中国气象灾害 分析 灾害综合损失评估等提供参考[15-18]
+280~680 。 , 《 、 。
+年鉴 [3] 年数据统计 平均每年因台风灾 最初 相似台风检索技术主要用于台风路径预报
+》 2010—2019 , ,
+害受灾人口约为 万人 转移安置人口 万 服务 因而技术方法主要以路径的 形 相似为目
+2 491 , 304 , “ ”
+人 受灾面积达 万 2 直接经济损失达 亿 标发展起来 判定相似台风的方法 从基于气象需求
+, 199 hm , 649 。 ,
+元 近年来我国沿海地区高影响台风频发 而人口经 的图形学 统计学 系统科学等多学科角度出发 逐
+。 , 、 、 ,
+济脆弱性依然较大[4-5] 因此 尽管监测预报预警技 步发展到利用气象学与地理信息系统技术 人工智能
+, , 、
+术不断发展 台风灾害防御仍刻不容缓 技术等多学科融合研究[19-22] 例如 刘勇等[23]利用
+, 。 。 ,
+水利水电技术(中英文) 第54卷 2023年第7期 15
+
+李 颖, 等 基于路径与环境场最优赋权的致灾相似台风检索方法研究
+//
+相似离度原理 建立了一种通过确定两条台风路径曲 据 其中 本文所述台风为西北太平洋对热带气旋的
+, 。 ,
+线上的对应控制点 最终只需在一个方向计算相似离 统称 包含热带低压 热带风暴 强热带
+, , (TD)、 (TS)、
+度就能判断两条台风路径曲线相似程度的计算方法 风暴 台风 强台风 和超强台风
+。 (STS)、 (TY)、 (STY)
+等[24]通过计算两条台风路径围成的封闭区域的 六个等级
+REN (Super TY) 。
+面积所对应的径相似区域指标 并基于此结合登陆中 1.1 台风路径数据
+,
+国的台风降水集合预报模型提高了预报效果 黄冬梅 台风路径数据采用了中国气象局热带气旋资料中
+。
+等[25]设计了一种基于主成分分析和动态时间弯曲距 心 提供的热带气旋最佳路径
+(tcdata.typhoon.org.cn)
+离的相似性度量方法 赵丹枫等[26]基于聚类思想提 数据集 该数据集包含了 年西北太平洋
+。 , 1949—2021
+出了一种基于相似阈值学习的台风路径分类方法 宋 含南海 赤道以北 东经 以西 海域热带气旋
+。 ( , , 180° )
+文彬等[22]基于空间位置 特征要素 时间规律三个 每 的中心经度 纬度和强度[29-30] 共含
+、 、 6 h/3 h 、 ,
+关键指标要素形成了相似台风路径的判定标准 近年 个 因路径数据集中 年编号为 号的台风
+。 2 389 ( 1971 40
+来 随着数值模式对台风路径预报能力的不断提高 对应中央气象台编号的 号和 号两个台风
+, , 7127 7128 ,
+台风路径短期预报的误差已经较小且将趋近极限[27] 故也可算为共 个 台风 个路径点 本
+, 2 390 ) 、 71 008 。
+台风路径预报对相似台风路径检索技术的依赖性逐渐 文选取了该数据集 和 两种时间精度的台风主
+6h 3 h
+变小 路径点数据 并通过对其插值加密后进行建模应用
+。 , ,
+然而 从灾害应对角度而言 相似台风检索技术 从台风环流中分离出来的副路径点[29]不在本文的讨
+, ,
+仍有较大的提升空间 一方面 灾害应对需特别考虑 论范围内
+, , 。
+非临近时段 例如 之外 相似台风路径检索方法 1.2 台风环境场数据
+( 72 h )
+的稳健性问题 而单纯基于路径形相似的统计方法或 环境场数据采用欧洲中期天气预报中心
+, ERA-In-
+数值模式对转折 拐点异常台风路径的预判能力仍然 再分析资料 该资料在 再分析资料基础
+、 terim , ERA-40
+有限 另一方面 除台风路径外 灾害应对需了解各 上进行了一些改进 数据同化中使用了 积分
+, , , , ECMWF
+致灾因子的强度 致灾持续时间等要素 考虑到异常 预报系统模式和四维变分资料同化技术 并结合改进
+、 。 ,
+路径与台风自身与环境场要素的相互配置有关 且致 的湿度分析 卫星数据偏差校正等技术 实现了再分
+, 、 ,
+灾关键要素多与环流背景影响密切相关 不少学者以 析资料质量的提升 为第三代覆盖全球大气的再分析
+, ,
+环境场为切入点开展了许多有益研究[10,14,28] 如姚健 资料[20] 由于西北太平洋台风的引导气流主要来自
+, 。
+等[14]通过计算关键区域物理场特征值 通过逐步过 于对流层中层的副热带高压和西风带环流[10,31] 文
+, ,
+滤筛选方法提出一种台风相似预报系统 鲁小琴 中以 位势高度场作为环境场代表指标引入相
+。 500 hPa
+等[28]比较了多种相似环境场检索指标的特点及其对 似台风检索 其空间范围为
+, 10°S—60°N, 90°—
+台风预报效果 发现对路径预报而言相似离度方法的 见图 再分析资料的时间分辨率为 空
+, 180°E( 1), 6 h,
+效果稍好于其他方法 而移向预报中最优系数法最 间水平分辨率为
+, 0.25°×0.25°。
+好 钟元等[10]提出了一个综合评估环境场影响的台 1.3 台风灾害损失数据
+;
+风路径客观相似预报模式 但是 如何将环境场与路 灾害损失数据采用中国气象局国家气候中心编制
+, ,
+径进行有机配置来更好表征致灾相似性仍有待研究 的 全国气候影响评价 [32] 中国气象灾害年鉴 [3]中
+。 《 》 《 》
+综上 面向台风灾害应对需求 路径与环境场对 年台风灾害记录表 其中缺 年 该
+, , 1985—2019 ( 1993 ),
+台风致灾相似性判定至关重要 而路径与环境场两者 表记载了对我国产生较大灾害且有记录的所有台风损
+,
+不同配置关系对台风相似性判定的影响尚不清晰 为 失 按分台风 分省条目记录 根据年份不同灾情类
+。 , 、 ,
+此 本文旨在发展一套致灾相似台风检索模型框架 型略有差异 较为统一的指标有受灾面积 绝收面
+, , , 、
+并进一步通过赋权试验设计 探讨路径与环境场不同 积 受灾人口 死亡人口 直接经济损失等
+, 、 、 、 。
+配置下对目标函数的影响 以期为相似致灾台风的研
+, 2 研究方法
+究提供借鉴 为台风灾害评估及综合研判提供技术
+,
+2.1 基本定义与目标选定
+支持
+。
+2.1.1 目标季节选取
+1 数据来源
+研究中将距离中国大陆及近海岛屿 度范围内的
+3
+本文所用数据主要包含台风路径数据及环境场数 台风定义为影响台风 通过对 年西北太
+。 1949—2021
+16 水利水电技术(中英文) 第54卷 2023年第7期
+
+李 颖, 等 基于路径与环境场最优赋权的致灾相似台风检索方法研究
+//
+平洋台风及影响台风起始点的季节分布和
+1985—
+年台风灾害损失记录统计 见表 可以看出
+2019 ( 1), ,
+月为台风发生频率较高的时期 在该时段生成
+6—11 ,
+的台风数目约占台风总数的 西北太平洋台
+84.7%(
+风 影响台风 且该时段生成台风所导致
+)/94.3%( ),
+灾害损失记录条数占总记录条数的 为了着
+98.8%。
+重把握我国致灾台风的总体规律 尽量排除小概率非
+,
+主导因素对建模的影响 本文将 月选定为目标
+, 6—11
+台风季节
+“ ”。
+2.1.2 目标台风选取
+已有研究认为 西北太平洋的台风路径分布大致
+,
+可以分为三种 西行 西北行和转向路径[33-34] 台
+: 、 ,
+风致灾强度在全球变暖气候背景下可能增加[35] 因
+。 图1 历史台风(蓝色, 1949—2021年6—11月)与目标
+此在相似性检索试验设计阶段 目标台风应尽量包含
+, 台风(黄色, 2014—2015年6—11月)的路径分布
+以上各类路径样本 各类致灾强度样本 全面 客观
+、 , 、
+Fig.1 Track distribution of history typhoons for retrieval
+反映研究区样本在空间密度 时间密度 强度分布等
+、 、 (blue lines, June to November,1949—2021) and target
+维度的气候特性
+。 typhoons (yellow lines, June to November,2014—2015)
+致灾相似台风检索模型建立过程中 节 本
+(2.2 ),
+文选取了 年台风季节生成的所有台风作
+2014—2015
+为检索对象 即 目标台风 经考察 目标台风共
+, “ ”。 ,
+包含台风 个 从空间分布上看 见图
+39 , ( 1), 2014—
+年的路径分布含西行 西北 转向路径 基本
+2015 、 、 ,
+能反映西北太平洋台风的路径分布特征 从强度分布
+。
+上来看 图 统计了台风各路径点处的强度等级分
+, 2
+布 年台风季节除去强度低于热带低压
+, 2014—2015
+及变性路径点外 路径点强度分布型与
+, 1949—2021
+年台风季节路径点强度分布型较为一致 两者相关性
+,
+可达 因此 可以认为所选取的样本可以作为
+0.79, ,
+检索的 目标台风 图2 目标台风(2014—2015年6—11月)与台风样本
+“ ”。
+总体(1949—2021年6—11月)路径点强度分布比较
+模型应用中 节 年台风季节
+(3.4 ), 1949—2021
+任意样本均可作为目标台风 Fig.2 Comparison of intensity distribution between target
+。
+2.1.3 历史台风选取 typhoons (June to November,2014—2015) and
+理想情况下用于被检索的台风应为历史上发生的 full sample typhoons (June to November,1949—2021)
+台风样本全集 而受限于观测手段和记录方式等原 故从灾害应对实用角度出发 在建模过程中
+, ,
+因 我国较完整的台风路径资料集始于 年 而 节 针对 年目标台风 选取其所
+, 1949 , (2.2 ), 2014—2015 ,
+台风灾害损失数据集自 中期才逐步具有统一的 对应的 年之前的有灾情资料时段
+1980s 2015 (1981—2015
+记录标准 以前 灾情数据较为缺乏 且因年 年 样本作为历史台风 模型应用中 节 针对
+。 1980s , , ) 。 (3.4 ),
+代久远导致承灾体与现在差异较大 年目标台风 选取有可靠灾情资料时段
+。 1949—2021 ,
+表1 1949—2021年西北太平台风生成月份 及 1 985 —2019年台风灾情记录分布
+Table1 Seasonal distribution of typhoons in the Northwest Pacific from1949 to2021 and typhoon disaster records from1985 to2019
+月 份 总 计
+1 2 3 4 5 6 7 8 9 10 11 12
+西北太平洋台风生成个数
+(1949—2021) 43 26 39 56 95 175 368 523 434 323 197 111 2390
+影响台风生成个数
+(1949—2021) 1 0 3 11 42 131 238 307 240 108 47 8 1136
+分省台风损失记录条数 除
+(1985—2019, 1993) 0 0 0 2 7 77 246 256 149 31 6 0 774
+水利水电技术(中英文) 第54卷 2023年第7期 17
+
+李 颖, 等 基于路径与环境场最优赋权的致灾相似台风检索方法研究
+//
+年 样本作为时历史台风 所得路径点可足够表征路径线段的细节
+(1985—2019 ) 。 。
+2.1.4 样本路径定义 计算路径i 上的第 k 个点 M 与路径 j 上任意
+(2)
+为了增加检索和被检索样本 本文从将每场台风 点之间的距离 将与M距离最近的路径j上的点记为
+, ,
+自起始点至任一路径点的一段路径 定义为该时刻的 N 最近距离记为MN
+, , 。
+样本路径 故除台风起始点外 每个路径点均对 将路径i上第 k 个点 M 指向第 k 个点 M′
+“ ”。 , (3) +1
+应一条样本路径 尽管样本路径对应的灾情并非历史 如M为路径终点 则为第 m 个点 M″指向 M 点
+。 ( , -1 )
+整场台风所产生的灾情 但实际应用中 可根据样本 的方向 记为以M为原点的正方向 若 N 落在 MM′
+, , , 。
+路径所对应的台风灾害发生发展的阶段间接借鉴历史 或M″M 右侧 则MN为正 反之则为负
+( ) , , 。
+灾情 将带符号的MN代入下述公式 计算相似离
+。 (4) ,
+2.2 致灾相似台风检索方案设定 度 公式如下
+。
+为了讨论路径与环境场相互配置对相似台风检索 m
+D = 1 MN
+的影响 本文设定兼顾线相似与场相似的相似台风检 ij m∑k= (1)
+, 1
+索方案 如图 所示 针对目标台风的任一目标时刻 m
+。 3 , E = 1 MN
+t 寻找历史台风中所有满足条件 与 t 时刻的位置相 ij m∑k= (2)
+, ( 1
+距 时间相差 个月 的时刻 t 计算两个时 m
+≤5°、 ≤2 ) ′, S = 1 MN - E
+刻的样本路径之间的相似度指标 以及环境场的之 ij m∑k= (3)
+1, 1
+间的相似度指标 并根据指标 和指标 构建组合
+2, 1 2 C = 1 D + S
+指标 以该指标最大值对应时刻的样本路径所对应的 ij ( ij ij) (4)
+, 2
+台风即为最优相似台风
+。
+其中
+,
+基于已有研究[28,36]
+,
+式中
+,
+m表示加密后的路径点数
+。
+本文拟选取相似离度作为相似度指标 最优相似系 如果C 的值越小 则两条路径的相似程度越高
+1, ij , 。
+数作为指标 2.2.2 环境场最优相似系数
+2。
+最优相似系数B 对场相似具有较高的分辨能力
+,
+与人为主观判断的结果一致性较高 由 形 系数
+, “ ”
+F和 值 系数 V 构成 具体地 计算目标台风的
+“ ” 。 ,
+环境场i与历史台风的环境场 j 范围见图 之间的
+( 1)
+最优相似系数B 的方法如下
+ij
+m
+x - x - x - x
+F = -
+∑k=
+1
+( ik 􀭰i) ( jk 􀭰j)
+ij 1 m (5)
+x - x + x - x
+∑k= ( ik 􀭰i jk 􀭰j )
+1
+m x - x
+D =
+􀭰i 􀭰j
+ij m (6)
+x - x + x - x
+∑k= ( ik 􀭰i jk 􀭰j )
+1
+V -
+Dij
+ij = e (7)
+B = F × V
+ij ij ij (8)
+式中 x为环境场所取范围内每个格点的变量值 x
+, ; 􀭰
+图3 致灾相似台风检索模型流程 为环境场所取范围内x的平均值 m为环境场所取范
+;
+Fig.3 Flow chart of the similar typhoon retrieval model 围的格点数 ; 理论上 , B ij 的值域为 (0, 1], 当其为 1
+2.2.1 路径相似离度 时两样本完全重合
+。
+相似离度C 表征了两条曲线的数值差异 D 和形 2.2.3 环境场和路径相似性指标的标准化
+状差异S 具体地 计算目标台风的样本路径 i 与历 为了消除不同指标之间的量纲差异 将相似离度
+。 , ,
+史台风的样本路径j的相似离度C 的方法如下 C和最优相似系数B两个指标进行标准化处理 针对
+ij 。 。
+将路径i 和 j 的 路径点进行加密 本文 某一目标台风路径点 i 与历史台风路径点 j 之间的相
+(1) 6 h 。
+暂定利用通过线性插值方法加密为 近似认为 似指标的标准化公式如下
+10 min,
+18 水利水电技术(中英文) 第54卷 2023年第7期
+
+李 颖, 等 基于路径与环境场最优赋权的致灾相似台风检索方法研究
+//
+B - B 分为西北太平洋台风和影响台风两类 见图 为了
+B0ij =
+B
+ij
+- B
+i min
+(9) 考察权重设置与不同强度等级之间的
+(
+关系
+4
+设
+)。
+置分强
+i max i min ,
+C C 度等级赋权试验
+C0ij =
+C
+i max -
+C
+ij
+(10)
+。
+i max - i min 表2 试验设计
+式中 上标为 表示标准化后的变量值 下标 i 表
+, 0 ; max Table2 Experimental design
+示路径点 i 与所有历史台风被检索的路径点之间的指 试验目的 试验样本 权重w
+标最大值 i 则为最小值 考察权重与 样本全体 西北太平洋台风 间隔
+, min 。 海陆位置差异 部分样 : 本 影响台风 0~1, 间隔 0.1
+2.2.4 组合指标及排序 : 0~1, 0.1
+考察权重与台 部分全体 将影响台风进 固定w 基于上述
+以 为固定窗宽间隔 对相似离度C和最优相
+风强度关系 一步分
+:
+六个强度等级
+0,
+两类试验
+(
+后设定
+0.1 , )
+似系数B进行权重赋值 计算组合指标如下
+,
+I
+i(
+w
+)
+= wB0ij +
+(1
+- w
+)
+C0ij
+(11)
+I w = I w
+i max( ) max( i( )) (12)
+式中 w为环境场相似指标的权重赋值 I 为组合指
+, ; i
+标 针对某一目标台风路径点 i 当 I 取最大值 I
+, , i i max
+时 对应历史台风被检索时刻的样本路径 i 所对应的
+,
+台风即为最优相似台风
+。
+2.3 赋权试验设计
+2.3.1 设计思路
+由式 可见 最优相似台风是权重 w 的函数
+(12) , ,
+本试验目的即寻找最优权重 理想地 致灾相似台风
+。 ,
+最优目标为灾情差异性最小 而寻求高时空分辨率的
+,
+灾情数据建模并不现实 根据区域灾害理论框架[37]
+。 , 图4 目标台风不同强度路径点分布(黑色实线左侧为
+灾情是致灾因子危险性 承灾体脆弱性与暴露性以及
+、 距离中国大陆及近海岛屿3度以内区域)
+孕灾环境稳定性综合作用的结果 假设环境场映射致
+。
+Fig.4 Track point distribution of target typhoons with different
+灾因子的强度和持续时间 路径的走向与位置映射了
+, intensities(The left side of the black line represents the area
+灾害触发的位置 进而映射到承灾体及孕灾环境 因
+, , of3 degrees away from mainland China and offshore islands)
+此 给定任一 w 值 只需固定环境场 路径两者之
+, , 、
+一 观察另者变化的差异性即可间接反映灾情差异性 3 结果分析
+,
+变化
+。
+根据本文赋权试验设计 得到如下试验结果 值
+2.3.2 目标函数 , 。
+得注意的是 本文所设相似台风预判位置区别于气象
+根据设计思路 考虑到 场 偏差较 线 偏 ,
+, “ ” “ ”
+预报中的预报位置 台风距离偏差 方向偏差为在特
+差计算复杂度高 本文拟定固定环境场来计算路径偏 , 、
+,
+定试验条件下得到的参考值 其分布型对致灾相似台
+差的方案 即 给定w 利用 节方案选定最优相 ,
+, , , 2.2
+风中路径与环境场赋权研究具有借鉴意义 不直接指
+似台风 选取目标时刻 t 的实际位置 A 与预判 ,
+, +24 h
+导台风路径预报
+位置之间A′之间的矢量偏差 A→A′ 即为目标函数 具 。
+, , 3.1 西北太平洋台风赋权试验结果
+体地 用距离偏差和方向偏差表征 其中 本文中预
+, 。 , 图 给出了西北太平洋台风不同环境场权重下
+判位置拟定为基于目标台风当前位置 O 加最优路径 5
+的距离偏差 见图 和方向偏差 见图 的
+[ 5(a)] [ 5(b)]
+之后位置N与当前位置M的矢量差M→N 统计参 中位数和平均值 可见距离偏差和方向偏差的统计
+24h 。 ,
+数选取中位数 平均值 第一四分 量均随权重大致呈 型分布 目标函数在 w 取中间
+(median)、 (mean)、 U ,
+位数 q 和第三四分位数 q 区域时取最优 具体地 对于距离偏差而言 当环境
+( 1) ( 3)。 。 , ,
+2.3.3 试验样本分类 场权重区间在 时 q 值较小
+[0.3, 0.5] , 1 (<180 km);
+试验样本设定为目标台风的所有 样本路径 在 时 值较小
+“ ”。 [0.5, 0.8] , median (<300 km), mean
+为了考察权重设置与地域差异的关系 进一步将样本 也较小 在 时 q 值较小
+, (≤360 km); [0.5, 0.7] , 3
+水利水电技术(中英文) 第54卷 2023年第7期 19
+
+李 颖, 等 基于路径与环境场最优赋权的致灾相似台风检索方法研究
+//
+图5 西北太平洋台风不同环境场权重下距离偏差的统计参数(实线: 中位数, 虚线: 平均值)的变化趋势
+Fig.5 Variation trend of statistical parameters (solid line: median, dotted line: mean) of track distance deviation under
+different environmental field weight of typhoons in the Northwest Pacific
+对于方向偏差而言 当环境场权重区间 取受环境场影响更大
+(<460 km)。 , 。
+在 时 q 值较小 在 结合统计分析 对于距离偏差而言 当环境场权
+[0.3, 0.6] , 1 (<10°); [0.3, 0.7] , ,
+时 值较小 在 时 重区间在 时 q 值较小 在
+, median (<23°); [0.2, 0.7] , mean [0.5, 0.9] , 1 (<220 km);
+值较小 q 值也较小 综上 当环境 时 值较小 在
+(<32°), 3 (<44°)。 , [0.6, 0.9] , median (< 330 km);
+场权重区间在 时 距离偏差相对较小 在 时 值 较 小 在
+[0.3, 0.8] , , [0.5, 0.7] , mean ( < 390 km);
+时 方向偏差相对较小 两者的最优权重 时 q 值较小 对于方向偏差
+[0.2, 0.7] , , [0.6, 0.7] , 3 (<500 km)。
+赋值均在 前后 而言 当环境场权重区间在 时 q 值较小
+0.5 。 , [0.7,0.9] , 1
+3.2 影响台风赋权试验结果 在 时 值较小
+(<12°); [0.5, 0.6] , median (<24°),
+进一步对影响台风做不同环境场权重下路径偏差 值也较小 在 时 q 值较小
+mean (<32°); [0.4, 0.7] , 3
+的统计分析 如图 所示 环境场权重在一定区间内 综上 当环境场权重区间在 时
+。 6 , (<42°)。 , [0.5, 0.9] ,
+时 影响台风的路径偏差同样存在低值区 但相对于 距离偏差和方向偏差相对较小 最优权重赋值在
+, 。 , 0.6
+西北太平洋全域台风的统计结果 影响台风路径偏差 前后
+, 。
+的最优低值区间相对更接近 低值区间大约分布在 3.3 不同强度影响台风赋权试验结果
+1,
+左右 表明影响台风的最优相似台风的选 进一步将影响台风按强度进行分类 并对比了不
+[0.5, 0.9] , ,
+图6 同图5, 但为影响台风
+Fig.6 The same as Fig5, but for influential typhoons
+20 水利水电技术(中英文) 第54卷 2023年第7期
+
+李 颖, 等 基于路径与环境场最优赋权的致灾相似台风检索方法研究
+//
+考虑环境场相似 w 时和影响台风的最优环境场 善 而对 的改善效果不明显 对 无明显
+( =0) , TS , Super TY
+权重 w 时各类影响台风的路径偏差 见图 改善作用 其中 距离偏差 方向偏差的各
+( =0.6) ( 。 , STY 、 TY
+对于距离偏差 见图 和 而言 在 w 统计参数优化率为六类中最高 表明对于 和
+7)。 [ 7(a) (b)] , =0 , STY TY
+时 超强台风 的距离偏差最小 在 w 而言 引入环境场相似分别对距离偏差和方向偏差的
+, (Super TY) ; = ,
+时 强台风 的距离偏差最小 对于方向偏 改善效果最好
+0.6 , (STY) 。 。
+差 见图 和 而言 在 w 时 仍是 考虑引入环境场相似后对 的路径预报
+[ 7(c) (d)] , =0 , Super Super TY
+的偏差最小 在 w 时 台风 的偏差 未改善的原因有两点 一是 在仅考虑路径
+TY ; =0.6 , (TY) : Super TY
+最小 可见 在引入环境场相似后 相似台风检索方 相似时的预判效果已经较好 为六类中最优 见图
+。 , , , [ 7
+法对 的距离偏差和 的方向偏差有最明显的改 和 二是 因自身强度较强 在移
+STY TY (a) (c)]; Super TY ,
+善效果 动过程中受自身结构影响较大 环境场对其的引导作
+。 ,
+表 给出了每一类强度下影响台风在环境场权重 用相对较弱
+3 。
+w 时相对于w 时距离偏差和方向偏差各统计 3.4 典型案例分析
+=0.6 =0
+参数的优化率 具体地 的偏差优化率均为正 3.4.1 转折路径案例分析
+。 , STY
+值 的偏差除了仅有一个统计参数为 以 号台风蔷琵 为例 观察其在不
+; TD、 STS、 TY 1525 (Champi) ,
+负值外 其余均为正值 仅有距离偏差的 同环境场权重下的不同检索结果 可以较为直观的看
+, ; TS median ,
+为正值 其余为负值 的各统计参数均为负 出相似台风检索方法在引入环境场相似后的检索效果
+, ; Super TY
+值 可见 对于 这四类台风来 见图 该案例选取的目标时刻为 年 月
+。 , TD、 STS、 TY、 STY ( 8)。 2015 10 18
+说 在w 时相对于 w 时目标函数有明显改 日 时 世界时 下同 仅考虑路径相似即
+, =0.6 =0 00 ( , ),
+图7 不同强度的影响台风在环境场权重w=0和w=0.6时路径距离偏差和方向偏差的统计参数
+Fig.7 Statistical parameters of track distance deviation and direction deviation for influential typhoons
+w w
+with different intensities under environmental field weight =0 and =0.6
+水利水电技术(中英文) 第54卷 2023年第7期 21
+
+李 颖, 等 基于路径与环境场最优赋权的致灾相似台风检索方法研究
+//
+表3 不同强度的影响台风在权重w=0.6时相对于w=0时路径距离偏差和方向偏差各统计参数的优化率
+%
+Table3 Improving rate of different statistical parameters of track distance deviation and direction deviation for influential
+w w
+typhoons with different intensities under environmental field weight =0 and =0.6 %
+台风等级
+指 标 参 数
+TD TS STS TY STY SuperTY
+q
+1 13.71 -40.23 -57.63 -7.43 40.71 -95.10
+距离偏差 median 26.72 10.77 38.26 7.31 44.25 -119.83
+/km
+mean 22.86 -14.05 17.06 12.43 37.62 -99.61
+q
+3 27.86 -15.67 26.50 14.66 38.33 -130.11
+q
+1 -62.72 -28.58 36.56 76.52 46.41 -206.69
+方向偏差 median 25.76 -97.68 37.17 60.36 24.96 -118.13
+/(°)
+mean 28.26 -24.37 18.49 66.55 33.10 -98.87
+q
+3 44.81 -19.22 10.11 61.16 53.49 -30.93
+w 时检索到的最优相似台风为 号台风琼安
+=0 9721
+蓝色 最优相似路径点时刻为 年 月
+(Joan, ), 1997 10
+日 时 在环境场权重 w 区间在 内 w
+19 06 ; [0.6, 1] (
+在一定区间内检索到同一个最优相似台风路径点 时
+)
+检索到的最优相似台风为 号台风苏力
+0619 (Soulik,
+红色 最优相似路径点时刻为 年 月 日
+), 2006 10 13
+时
+12 。
+在目标时刻之前 台风琼安与蔷琵的最佳路径相
+,
+似度较高 均为向西偏北方向移动 且两条曲线在位
+, ,
+置上较为接近 而台风苏力与蔷琵的位置距离较远
+; , 图8 台风蔷琵(1525, 黑色)、 琼安(9721, 蓝色)、 苏力
+在目标时刻距离接近 个纬度 但两条曲线在形状上
+(619, 红色)的CMA最佳路径(实线)和相似台风检索方法
+5 ,
+较为相似 在目标时刻之后 蔷琵的路径发生明显转 得到的目标时刻(2015年10月18日00时, 世界时,
+。 ,
+折 由西北转为向北偏东方向移动 而台风琼安仍向 下同)预判路径(虚线)
+, ,
+西北方向移动 导致其预判路径 蓝色虚线 与蔷琵
+, ( ) Fig.8 CMA best tracks (solid lines) of Champi (No.1525,
+的路径发生明显偏离 后的距离偏差达
+black), Joan (No. 9721, bule), Soulik (No.0619, red) and
+, 24 h 331 km;
+而台风苏力与蔷琵发生了相似的路径转折 其预判路
+the predicting tracks of the target time(000 UTC18 Oct2015)
+,
+径 红色虚线 与蔷琵 后的路径距离偏差仅 using the similar typhoon retrieval method
+( ) 24 h
+可见 在引入环境场相似后 相似台风检 安置人口 受灾面积 直接经济损失的相关系数高达
+23.6 km。 , , 、 、
+索方法较为成功的预判了蔷琵的路径转折 如果按共同受灾的省份看 浙江 福建 江西
+。 0.93, , 、 、
+3.4.2 灾损强度预判释用 上述四个损失指标的相关系数也高达 经检验
+0.91, ,
+为了检验本文致灾相似台风方案在灾情研判应 以上两者均达到 显著性水平 因此 本方案提
+0.01 。 ,
+用中的效果 本文分别选取了西行 北上的两场对 供的最优相似案例可为灾情研判提供重要参考 实际
+, 、 ,
+我国造成较大损害的 号台风桑美和 号台 工作中 进一步结合通胀因素 人口与农作物演变特
+0608 1909 , 、
+风利奇马 以 年有灾情记录的时段为 征 路径转向等具体方面进行适当调整修正即可
+, 1985—2019 、 。
+检索时段 选取 w 提取最优相似致灾案例如 根据案例 可以看出 本方案选取的台风利奇马
+, =0.5, 2 ,
+图 所示 的最优相似台风为 号台风 该台风与利奇马在
+9 。 8707 ,
+由台风桑美的最优相似台风案例 可以看出 尽 登陆次数 途径区域 路径形态 环境场形势上都具
+1 , 、 、 、
+管 号台风苏迪罗后期向东转折 如果仅从路径 有高度相似性 虽然时隔年代久远 损失数据并不甚
+1513 , 。 ,
+的形相似上来看并非最优 但考虑到环境场的高度相 完善 但从受灾面积上来看 两者在成灾体量上还是
+, , ,
+似性 致灾能力相似度较高 方案基于目标函数将其 较为相近的 在实际工作中 如遇此类情况 可先通
+, , 。 , ,
+选中为最优相似台风 表 给出了两个案例实况与最 过设定参考指标 如受灾面积 进行灾情等级确定
+。 4 ( ) ,
+优相似台风的损失情况表 从中可以得出 苏迪罗与 再结合排序第二 第三的最优相似台风进一步细化其
+, , 、
+桑美台风灾害损失前四个最重的省份受灾人口 转移 他指标的损失值
+、 。
+22 水利水电技术(中英文) 第54卷 2023年第7期
+
+李 颖, 等 基于路径与环境场最优赋权的致灾相似台风检索方法研究
+//
+图9 台风桑美(0608)与利奇马(1912)路径及其最优相似台风路径
+Fig.9 Tracks of Saomai (No. 0608) and Lekima (No. 1909) and their optimal similar typhoons
+表4 台风桑美(0608)与台风利奇马(1909)及其最优相似台风损失情况
+( ) ( )
+Table4 Losses of Saomai No. 0608 and Lekima No. 1909 and their optimal similar typhoons
+登陆地点 直接经济损
+中央台 热带气 受灾人 转移安置 受灾面积
+类 型 名 称 生成时间 最大风力 受灾省份 失 亿元 当
+编号 旋序号 ( 等级 口 / 万人 人口 / 万人 / 万 hm 2 年 / 价格 (
+) )
+浙 江
+284.4 25.70 9.2 110.8
+福 建
+案例 最优 苏迪罗 191.2 45.40 10.4 78.8
+1 台湾花莲 安 徽
+相似台风 1513 201514 2015-07-30 (15) 123.3 22.60 9.4 31.5
+Soudelor 江 西
+58.6 11.10 4 6.2
+江 苏
+166.5 1.00 20.5 15.2
+浙 江
+345.6 100.11 10.32 127.3
+桑美 福 建
+案例 实况 浙江苍南 145.5 71.00 11.13 63.55
+1 0608 200610 2006-08-08 (17) 江 西
+Saomai 164.5 9.05 7.18 5.5
+湖 北
+10.0 — 0.35 0.23
+台 湾
+台湾北部 — — — —
+案例 最优 (12), 浙 江
+2 浙江瓯海 470.0 — 28.475 5
+相似台风 8707 198709 — 1987-07-12 (12), 江 苏
+山东荣成 — — 42.411 —
+(12) 山 东
+— — 9.112 0.86
+河北省
+15.0 0 1.66 0.06
+辽宁省
+36.5 13 2.52 0.06
+吉林省
+2.2 0.2 1.19 0.01
+浙江温岭 上海市
+利奇马 (16), 15.0 15 0.28 0
+案例 实况 山东青岛 江苏省
+2 1909 201912 2019-08-01 (9), 53.3 1.1 15.54 0.17
+Lekima 山东昌邑 浙江省
+(9) 757.7 136.2 25.77 3.7
+安徽省
+19.5 2.3 2.44 0.4
+福建省
+0.6 0.6 0 0
+山东省
+502.6 41.3 64.3 4.95
+暴潮 海浪等 相似关系 给出了最优相似台风排
+4 讨 论 、 ) ,
+序 而本文通过寻求与致灾因子有一定映射或制约关
+;
+本文研究与以往研究的异同 一是目的方
+系的路径和大尺度环流场之间的相似关系 间接获取
+(1) 。
+,
+面 以往大多数相似 路径 台风的研究 主要是用 致灾相似台风排序 本模型输入变量较前者更易获
+, ( ) , 。
+于台风路径预报 而文本综合考虑相似路径与相似环 取 故预估阶段更为快捷便利 但致灾因子相似性精
+, , ,
+境场 主要用于辅助台风灾情研判 二是方案选取方 度或低于前者 实际应用中 随着监测预报要素的不
+, 。 , ,
+面 与本文初衷类似 文献 通过直接建立多致灾 断增加 两种方案可以配合使用
+, , [8] , 。
+因子 主要包括气压 风速 风向 移速 风场 风 赋权试验中的路径预判位置与气象预报中的
+( 、 、 、 、 、 (2)
+水利水电技术(中英文) 第54卷 2023年第7期 23
+
+李 颖, 等 基于路径与环境场最优赋权的致灾相似台风检索方法研究
+//
+路径预报位置的异同 相同点是均可选用路径偏差与 影响台风 不同强度台风的赋权试验 结果表明 对
+。 、 。 :
+方向偏差作为度量指标 区别在于 一是条件不同 西北太平洋台风而言 权重区间在 时距离
+。 : , , [0.3, 0.8]
+在气象预报中 无论数值预报 统计预报 还是人为 偏差相对较小 权重区间在 时方向偏差相
+, 、 , , [0.2, 0.7]
+主观预报 为了达到预报效果最优 其输入的资料集 对较小 两者的最优权重均在 前后取得 对影响
+, , , 0.5 ;
+是不限制的 而本文是固定权重 环境场条件下 且 我国的台风而言 当环境场赋值区间在
+。 、 , , [0.5, 0.9]
+为历史台风 位移矢量移植到当前点后的位置作 时 距离偏差和方向偏差相对较小 最优权重赋值在
+24 h , ,
+为预判位置 二是目的不同 预报的目的是与实况无 前后 对影响我国的不同强度台风而言 当环境
+。 , 0.6 ; ,
+限接近 而预判位置的设定是为了通过统计不同权重 场取最优权重时 改善敏感度最高
+, , TY、 STY 。
+条件下的该物理量的大小来选取最优权重 通过对转折路径台风蔷琵的案例分析看出
+。 (4) ,
+关于环境场要素的选取 笔者已将含 因方案中引入环境场 优选的致灾相似台风对转折路
+(3) 。 500 ,
+高度场 湿度场等多种环境场要素引入 径有一定的预判作用 通过对高致灾案例台风桑美和
+hPa 、 850 hPa ,
+本模型并开展应用 实践表明 每增加一个要素计算 利奇马的方法应用可以看出 通过本模型得到的最优
+。 , ,
+量即呈指数增长 且计算量的增加并未带来稳定优化 相似台风灾情的分布 量级对灾情研判具有较好的指
+, 、
+效果 考虑多要素之间的耦合权重较两要素权重讨论 示意义
+。 。
+复杂程度要更高 本文仅选取引导气流代表高度的
+, 参考文献(References):
+高度场作为代表指标进行赋权讨论 其他变
+500 hPa ,
+量如何高效引入模型中也将是后续值得深入研究的
+[1] WorldMeteorologicalOrganization. WMOAtlasofMortalityandEco-
+问题 nomic Losses from Weather, Climate and Water Extremes[R].
+。
+最优相似致灾台风的验证 灾害评估以应 Genève:WMO,2021.
+(4) 。
+用为主 受限于历史灾情数据时空精度以及下垫面 [2] WorldBank,TheUnitedNations. NaturalHazards,UnNaturaldisas-
+, ters: The economics of effective prevention[R]. Washington DC:
+承灾体差异 不同评判标准下的最优相似致灾台风
+, TheWorldBank,2010.
+可能不同 因而 在典型应用案例中 本文给出了 中国气象局 中国气象灾害年鉴 北京 气象出版社
+, , , [3] . [M]. : :
+基于最优函数条件下的前三个最优案例作为参考
+2011—2020.
+。
+随着全国自然灾害综合风险普查的进行 高精度灾 China Meteorological Administration. China Meteorological Disaster
+,
+情数据逐渐完善 如何将相似台风算法与历史灾情 Yearbook[M]. Beijing:ChinaMeteorologicalPress:2011—2020.
+, 叶舟 周旦娜 陈芳 基于网络流模型利用台风雨资源的舟山岛
+[4] , , .
+数据进一步融合 构建基于路径 环境场 灾情等
+地下水库调度研究 水利水电技术 中英文
+, 、 、 [J]. ( ),2022,53(2):
+数据的多元相似综合指标 也是接下来值得继续深
+, 18-30.
+入研究的课题
+YE Zhou, ZHOU Danna, CHEN Fang. Network flow model-based
+。
+studyondispatchingof reservoirs with underground reservoir utilizing
+5 结 论
+typhoonrain resource in Zhoushan Island[J]. Water Resources and
+在致灾相似台风检索方案设计中 根据统计 HydropowerEngineering,2022,53(2):18-30.
+(1) , 王金虎 王宇豪 陈江 等 基于承灾体空间化的高温灾害风险
+分析 选取 月作为台风季节 以 [5] , , , .
+, 6—11 、 2014—2015 评估研究 以中国长三角为例 水利水电技术 中英文
+: [J]. ( ),
+年台风季节样本作为目标样本 以 年台
+、 1981—2015 2022,53(9):1-12.
+风季节样本作为被检索样本具有较好代表性 由此取
+, WANGJinhu,WANG Yuhao, CHEN Jiang, et al. Spatialization of
+得的方案较为适应我国致灾台风的气候规律 应用
+disaster-affectedbody-basedstudyonriskassessmentofhightempera-
+。
+时 目标样本可为任一历史或未来台风路径 turedisaster: a case of Yangtze River Delta in China[J]. Water
+, 。
+在致灾相似台风检索模型建立中 借鉴已有 ResourcesandHydropowerEngineering,2022,53(9):1-12.
+(2) , 方伟华 栗健 张海霞 等 热带气旋多致灾因子综合动态风险
+[6] , , , .
+研究选取相似离度表征路径相似度 最优相似系数表
+预警方法概述 中国减灾
+、 [J]. ,2022(15):28-31.
+征环境场相似度 本文在此基础上将两者进行标准化
+, FANGWeihua,LIJian,ZHANGHaixia,etal. Overviewofcompre-
+及加权设计 理论上 两者有机结合后 该致灾相似
+hensivedynamicrisk warning method of tropical cyclone multi-disas-
+。 , ,
+台风检索模型可以一定程度反映台风位置 致灾强度 ter-causingfactors[J]. DisasterReductioninChina,2022(15):28-
+、
+及持续时间等致灾成灾关键要素特征 31.
+。 闪淳昌 张云霞 秦绪坤 面向重大灾害现场调查评估研究 以
+为了探讨模型中环境场权重的设置与样本海 [7] , , . :
+(3) 澳门 “ 天鸽 ” 台风灾害应对实践为例 [J]. 中国应急管理 , 2021
+陆位置 强度的关系 开展了针对西北太平洋台风
+、 , 、 (10): 10-13.
+24 水利水电技术(中英文) 第54卷 2023年第7期
+
+李 颖, 等 基于路径与环境场最优赋权的致灾相似台风检索方法研究
+//
+SHANChunchang, ZHANG Yunxia, QIN Xukun. Research on site PANJinsong,ZHOULingli,LUWei,etal. Comparativeanalysison
+investigationandassessment of major disasters: A case study on the mechanismandenergybudgetsoflocalextremerainfalleventscaused
+responsepracticeofTyphoonHatoinMacao[J]. EmergencyManage- byremnantclouds of two similar typhoons with similar tracks [J].
+mentinChina,2021(10):10-13. ChineseJournalofAtmosphericSciences,2019,43(6):1399-1412.
+栗健 方伟华 张晓宁 等 基于多致灾因子相似的 检索方 黄惠镕 赵玉春 荀爱萍 等 年相似路径台风 苏力 与
+[8] , , , . TC [17] , , , . 2013 “ ”
+法研究 以风暴潮 海浪灾害预评估为例 海洋科学 潭美 造成福建暴雨落区差异的成因 暴雨灾害
+: - [J]. ,2016, “ ” [J]. ,2021,40
+40(8):49-60. (2):136-146.
+LIJian, FANG Weihua, ZHANG Xiaoning, et al. Similar tropical HUANG Huirong, ZHAO Yuchun, XUN Aiping, et al. Causality
+cycloneretrievalmethodforrapidpotentialstormsurgeand wavedis- analysisofdifferenceofheavyrainfalldistributioninFujiancausedby
+asterlossassessment based on multiple hazard indictors[J]. Marine typhoonsSoulikandTramialongsimilartracksin2013[J]. Torrential
+Sciences,2016,40(8):49-60. RainandDisasters,2021,40(2):136-146.
+林良勋 程正泉 黄忠 等 热带气旋相似和最大概率集成预报 李瑞芬 郭卫华 丛春华 等 两个相似路径台风途经鲁西南时
+[9] , , , . [18] , , , .
+方法及其预报业务试用 热带气象学报 降水差异的成因分析 海洋预报
+[J]. ,2005,21(6):651- [J]. ,2022(2):40-49.
+657. LIRuifen,GUOWeihua,CONG Chunhua, et al. Cause analysis of
+LINLiangxun,CHENGZhengquan,HUANGZhong,etal. Methods theprecipitation difference between typhoon “Yagi” and “Rumbia”
+ofanalogyandmaximumprobabilityensembleintheforecastoftropi- passing through southwest of Shandong Province with similar tracks
+calcycloneson and operational application[J]. Journal of Tropical [J]. MarineForecasts,2022(2):40-49.
+何迪 陆德辉 韦翠 等 人工神经网络寻找相似路径历史台
+Meteorology,2005,21(6):651-657. [19] , , , . BP
+钟元 滕卫平 胡波 等 热带气旋中期路径的动力相似预测方 风 广东气象
+[10] , , , . [J]. ,2022,44(6):36-40.
+案 海洋预报
+[J]. ,2012,29(6):8-21. HEDi,LUDehui,WEI Cui, et al. BP artificial neural network for
+ZHONGYuan, TENG Weiping, HU Bo, et al. Dynamic similarity historicaltyphoons with similar paths[J]. Guangdong Meteorology,
+predictionfor mid-term track of tropical cyclone[J]. Marine Fore- 2022,44(6):36-40.
+钱美超 黄琰 章芳 等 基于 算法的台风运动轨迹相似性
+casts,2012,29(6):8-21. [20] , , , . DTW
+潘志祥 何逸 高继林 湖南台风暴雨的特征及其预报 气 研究 电子技术与软件工程
+[11] , , . [J]. [J]. ,2022(19):230-233.
+象
+,1992(1):39-43. QIAN Meichao, HUANG Yan, ZHANG Fang, et al. Research on
+PANZhixiang,HEYi,GAOJilin. Characteristicsandforecastofty- typhoontrajectorysimilaritybasedonDTW algorithm[J]. Electronic
+phoonrainstorm in Hunan[J]. Meteorological Monthly, 1992(1): TechnologyandSoftwareEngineering,2022(19):230-233.
+顾秋阳 吴宝 池仁勇 基于高阶路径相似度的复杂网络链路预
+39-43. [21] , , .
+李原园 张宜清 杨晓茹 完善流域防洪工程体系提升洪涝灾 测方法 通信学报
+[12] , , . [J]. ,2021,42(7):61-69.
+害防御能力 水利发展研究
+[J]. , 2021, 21(9): 28-29. GUQiuyang,WUBao,CHIRenyong. Linkpredictionmethodbased
+LIYuanyuan,ZHANG Yiqing, YANG Xiaoru. Improving the Basin onthesimilarityofhighpath[J]. JournalofCommunications,2021,
+FloodControl Engineering System and Enhancing the Flood Disaster 42(7):61-69.
+宋文彬 郑卫江 薛峰 相似台风智能检索与可视化分析研究
+Prevention Ability [J]. Water Resources Development Research, [22] , , .
+气象
+2021, 21(9):28-29. [J]. ,2020,46(10):1330-1339.
+吴彩铭 任福民 朱婧 热带气旋灾害预评估模型研究回顾
+[13] , , . [J]. SONG Wenbin, ZHENG Weijiang, XUE Feng. Research of intelli-
+海洋气象学报
+,2022,42(3):13-22. gentretrievalandvisualizationofsimilartyphoons[J]. Meteorological
+WUCaiming,RENFumin,ZHUJing. Review ofresearches on pre- Monthly,2020,46(10):1330-1339.
+刘勇 吴必文 王东勇 一种台风路径相似检索的算法研究
+assessmentmodelsfortropicalcyclonedisaster[J]. JournalofMarine [23] , , . [J].
+气象
+Meteorology,2022,42(3): 13-22. ,2006,32(7):18-24.
+姚健 叶子祥 庄千宝 等 台风环境场特征相似预报方法
+[14] , , , . [J]. LIUYong,WUBiwen, WANG Dongyong. Algorithm study on simi-
+暴雨灾害
+,2010,29(4):344-349. larityretrievaloftyphoon tracks[J]. Meteorological Monthly,2006,
+YAO Jian, YE Zixiang, ZHUANG Qianbao, et al. The Typhoon 32(7):18-24.
+ForecastingSystem Build on Similar Characters of Synoptic Situation [24] RENF M, QIU W, DING C, et al. An objective track similarity
+[J]. TorrentialRainandDisasters,2010,29(4):344-349. index and its preliminary application to predicting precipitation of
+李玥 张富龙 樊嘉璐 影响吉林省的两次相似路径超强台风对
+[15] , , . landfallingtropicalcyclones[J]. WeatherandForecasting,2018,33
+比分析 气象灾害防御
+[J]. ,2022,29(4):40-43. (6):1725-1742.
+黄冬梅 郑霞 赵丹枫 等 一种多元台风时间序列的相似性度
+LI Yue, ZHANG Fulong, FAN Jialu. Comparative analysis of two [25] , , , .
+量方法 计算机应用研究
+similartracksupertyphoonsaffectingJilinProvince[J]. Meteorologi- [J]. , 2019, 36(3):844-850.
+calDisasterPrevention,2022,29(4):40-43. HUANGDongmei, ZHENG Xia, ZHAO Danfeng, et al. Similarity
+潘劲松 周玲丽 陆玮 等 两个相似路径台风残余造成局地特
+[16] , , , . measuremethodofmultipletyphoontimeseries[J]. Application Re-
+大暴雨的成因机制和能量收支对比分析 大气科学
+[J]. , 2019, searchofComputers,2019,36(3):844-850.
+赵丹枫 许强 黄洲 等 基于相似阈值学习的台风路径分类方
+43(6):1399-1412. [26] , , , .
+水利水电技术(中英文) 第54卷 2023年第7期 25
+
+李 颖, 等 基于路径与环境场最优赋权的致灾相似台风检索方法研究
+//
+法 海洋环境科学
+[J]. ,2022,41(4):644-652. Beijing:ChinaMeteorologicalPress,2012.
+陈联寿 丁一汇 西太平洋台风概论 北京 科学出版社
+ZHAODanfeng,XUQiang,HUANGZhou,etal. Typhoonpathclas- [33] , . [M]. : ,
+sificationbasedonsimilaritythreshold learning[J]. Marine Environ- 1979.
+mentalScience,2022,41(4):644-652. CHEN Lianshou, DING Yihui. Tropical Cyclone in West Pacific
+[27] YUH,CHENG,ZHOUC,etal. Arewereachingthelimitoftropi- [M]. Beijing:SciencePress,1979.
+袁俊鹏 江静 西北太平洋热带气旋路径及其与海温的关系
+calcyclonetrack predictability in the Western North Pacific? [J]. [34] , . [J].
+热带气象学报
+BulletinoftheAmericanMeteorologicalSociety,2022,103(2):410- ,2009, 25(7):69-78.
+428. YUANJunpeng,JIANGJing. ThetropicalcyclonetracksintheWest-
+鲁小琴 余晖 赵兵科 热带气旋环境场相似检索方法的对比分
+[28] , , . ernNorth Pacific and their relationship with ocean temperature[J].
+析 气象
+[J]. ,2013,39(12):1609-1615. JournalofTropicalMeteorology,2009,25(7):69-78.
+牛逸龙 近 年西北太平洋热带气旋强度及降水评估 上
+LUXiaoqin,YUHui,ZHAOBingke. Studyonsimilaritymethodfor [35] . 140 [D].
+海 华东师范大学地理科学学院
+ambientfieldoftropicalcyclones[J]. MeteorologicalMonthly,2013, : , 2022.
+39(12):1609-1615. NIUYilong. Estimate of Intensity and Precipitation of Tropical Cy-
+[29] YINGM,ZHANGW,YUH,etal. AnoverviewoftheChinaMete- clonesin Western North Pacific during 140 Years[D]. Shanghai:
+orological Administration tropical cyclone database[J]. Journal of SchoolofGeographicSciences,EastChinaNormalUniversity,2022.
+罗阳 聂新旺 王广山 几种统计相似方法的适用性比较
+Atmospheric&OceanicTechnology,2014,31(2):287-301. [36] , , . [J].
+气象
+[30] LUX,YUH,YINGM,etal. WesternNorthPacifictropicalcyclone ,2011,37(11):1443-1447.
+database created by the China Meteorological Administration[J]. LUOYang,NIEXinwang,WANGGuangshan. Anexplorationonthe
+AdvancesinAtmosphericScience,2021,38(4):690-699. applicability of similarity parameter in similarity forecasting[J].
+陈联寿 徐祥德 罗哲贤 等 热带气象动力学引论 北京
+[31] , , , . [M]. : MeteorologicalMonthly,2011,37(11):1443-1447.
+气象出版社 史培军 再论灾害研究的理论与实践 自然灾害学报
+,2002. [37] . [J]. ,1996,
+CHENLianshou,XUXiangde,LUOZhexian,etal. AnIntroduction 5(4):6-17.
+toTropical Meteorological Dynamics[M]. Beijing: China Meteoro- SHIPeijun. Theoryandpracticeofdisasterstudy[J]. JournalofNat-
+logicalPress,2002. uralDisasters,1996,5(4):6-17.
+国家气候中心 全国气候影响评价 北京 气象出版社
+[32] , [M]. : ,
+责任编辑 王海锋
+2012. ( )
+NationalClimateCenter, National Climate Impact Assessment[M].
+26 水利水电技术(中英文) 第54卷 2023年第7期
